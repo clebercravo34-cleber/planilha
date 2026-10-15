@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="100" fill="#020617"/>
-  <path d="M256 58 310 168 432 186 344 272 365 394 256 336 147 394 168 272 80 186 202 168Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="12" stroke-linejoin="round"/>
-  <path d="M188 236h136l-15 28H203z" fill="#020617"/>
-  <text x="256" y="455" font-family="Arial,sans-serif" font-size="56" font-weight="800" text-anchor="middle" fill="#fbbf24">NICO</text>
-</svg>
