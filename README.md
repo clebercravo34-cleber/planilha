@@ -1,19 +1,16 @@
-# NICO Premiação — PWA para GitHub Pages
+# Premiação Grupo NICO — PWA
 
-## Arquivos
-- `index.html`: aplicativo
-- `manifest.json`: configuração de instalação PWA
-- `service-worker.js`: cache básico para abertura offline da estrutura do app
-- `icons/`: ícones do aplicativo
+## Publicar no GitHub Pages
+1. Extraia todos os arquivos deste ZIP.
+2. Envie `index.html`, `manifest.json`, `sw.js` e a pasta `icons` para a raiz do repositório GitHub.
+3. No repositório, abra **Settings → Pages**.
+4. Em **Build and deployment**, escolha **Deploy from a branch**, selecione a branch principal e a pasta `/ (root)`, e salve.
+5. Aguarde a publicação e abra o endereço HTTPS do GitHub Pages.
+6. No Android, abra o site no Chrome e escolha **Instalar app** ou **Adicionar à tela inicial**.
 
-## Publicar no GitHub
-1. Crie um repositório no GitHub.
-2. Envie todos os arquivos e a pasta `icons` para a raiz do repositório.
-3. Vá em **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**, escolha `main` e `/(root)`, e salve.
-5. Abra a URL HTTPS do GitHub Pages. No Android/Chrome, use o menu ⋮ → **Instalar app** ou **Adicionar à tela inicial**.
-
-## Importante
-- O modo PWA exige HTTPS; GitHub Pages fornece HTTPS.
-- O aplicativo usa bibliotecas externas e o Supabase configurado dentro do próprio app. O cache offline não garante sincronização com o Supabase sem internet.
-- Antes de publicar, altere a senha padrão `admin / admin123` dentro do aplicativo. Não use credenciais administrativas sensíveis embutidas em HTML público.
+## Observações
+- O arquivo HTML original foi mantido e preparado como `index.html`; foram adicionados o manifesto, o service worker e ícones.
+- O aplicativo usa bibliotecas externas via CDN e o Supabase configurado dentro do próprio app. Algumas funções dependem de internet.
+- Os dados locais ficam no armazenamento do navegador daquele aparelho. Para sincronizar entre aparelhos, configure corretamente o Supabase e suas políticas/tabelas.
+- Troque a senha padrão `admin / admin123` depois do primeiro acesso.
+- O service worker só funciona em HTTPS (como GitHub Pages) ou localhost.
