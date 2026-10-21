@@ -1,13 +1,13 @@
-# Premiação Grupo NICO — PWA
+# NICO Premiação — PWA
 
 ## Publicar no GitHub Pages
-1. Envie os quatro arquivos (`index.html`, `manifest.json`, `service-worker.js`, `icon.svg`) para a raiz do repositório GitHub.
-2. No repositório, abra **Settings → Pages**.
-3. Em **Build and deployment**, escolha **Deploy from a branch**, selecione `main` e `/ (root)` e salve.
-4. Abra o endereço GitHub Pages pelo Chrome no celular. Use o menu do navegador e escolha **Instalar app** ou **Adicionar à tela inicial**.
+1. Extraia todos os arquivos deste ZIP.
+2. No seu repositório GitHub, envie `index.html`, `manifest.json`, `sw.js` e a pasta `icons`.
+3. Em **Settings → Pages**, selecione a branch principal e a pasta `/ (root)`.
+4. Abra o endereço HTTPS publicado e, no Chrome Android, use **⋮ → Adicionar à tela inicial** ou **Instalar app**.
 
 ## Observações
-- O PWA precisa ser servido por HTTPS (GitHub Pages atende).
-- O HTML original foi mantido e preparado com manifesto e service worker.
-- A sincronização com Supabase e bibliotecas externas precisam de internet; o service worker guarda os arquivos locais do app para abrir a interface offline.
-- Antes de usar em produção, troque a senha padrão `admin / admin123` e configure corretamente as permissões e as políticas de segurança do Supabase.
+- Não renomeie nem remova `manifest.json`, `sw.js` ou a pasta `icons`.
+- O aplicativo usa bibliotecas externas via CDN; alguns recursos podem precisar de internet.
+- Os dados locais continuam no armazenamento do navegador. Para sincronização entre aparelhos, configure o Supabase dentro do app e confirme as políticas/tabelas do projeto.
+- Troque a senha padrão do administrador após o primeiro acesso.
